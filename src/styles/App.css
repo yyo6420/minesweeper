@@ -55,3 +55,8 @@
   background-color: #ddb91b;
   cursor: grab;
 }
+
+.bomb {
+  background: url("../../public/bomb.jpg");
+  background-size: contain;
+}
