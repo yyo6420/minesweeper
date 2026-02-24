@@ -2,3 +2,23 @@
   min-height: 100vh;
   min-width: 100vw;
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.pageTitle {
+  font-size: 3.5rem;
+  color: coral;
+  text-shadow: 2px 2px #ee0505;
+}
+
+.counterText {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #db0505;
+  text-shadow: 2px 2px #c79d15;
+}
