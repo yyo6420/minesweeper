@@ -12,20 +12,20 @@
 
 .pageTitle {
   font-size: 3.5rem;
-  color: coral;
-  text-shadow: 2px 2px #ee0505;
+  color: #ffffff;
+  text-shadow: 2px 2px #e30613;
 }
 
 .counterText {
   font-weight: bold;
   font-size: 2rem;
-  color: #db0505;
-  text-shadow: 2px 2px #c79d15;
+  color: #ffffff;
+  text-shadow: 2px 2px #e30613;
 }
 
 .counter {
-  color: #6c9707;
-  text-shadow: 2px 2px #a0f109;
+  color: #e30613;
+  text-shadow: 2px 2px #ffffff;
 }
 
 .gameBoard {
@@ -34,8 +34,8 @@
   grid-template-rows: repeat(10, 1fr);
   gap: 0.7rem;
   padding: 0.5rem;
-  background-color: #805b0c;
-  border: 4px solid #f8f401;
+  background-color: #1c2c5b;
+  border: 4px solid #e30613;
   border-radius: 1rem;
 }
 
@@ -52,12 +52,12 @@
 }
 
 .default {
-  background-color: #f0ac47;
-  color: #1d428a;
+  background-color: #004170;
+  color: #ffffff;
 }
 
 .default:hover {
-  background-color: #ddb91b;
+  background-color: #e30613;
   cursor: grab;
 }
 
@@ -69,4 +69,41 @@
 .notBomb {
   background: url("../../public/notBomb.png");
   background-size: contain;
+}
+
+.winBlock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+
+.winDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.winTitleText {
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #0a1f44;
+}
+
+.winButton {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #e30613;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.winButton:hover {
+  background-color: #ffffff;
+  color: #e30613;
+  cursor: grab;
 }

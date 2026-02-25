@@ -8,7 +8,7 @@ function App() {
     <div className="page">
       <h1 className="pageTitle">מצא את כל המוקשים</h1>
       <div>
-        <Board setCounter={setCounter} />
+        <Board counter={counter} setCounter={setCounter} />
       </div>
       <h2 className="counterText">
         מספר מוקשים שהתגלו: <span className="counter">{counter}</span>
