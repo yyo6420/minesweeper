@@ -1,8 +1,5 @@
 function Bomb() {
-  return (
-    <div className="block bomb">
-    </div>
-  )
+  return <div className="block bomb"></div>;
 }
 
-export default Bomb
+export default Bomb;

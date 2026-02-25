@@ -23,6 +23,11 @@
   text-shadow: 2px 2px #c79d15;
 }
 
+.counter {
+  color: #6c9707;
+  text-shadow: 2px 2px #a0f109;
+}
+
 .gameBoard {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -58,5 +63,10 @@
 
 .bomb {
   background: url("../../public/bomb.jpg");
+  background-size: contain;
+}
+
+.notBomb {
+  background: url("../../public/notBomb.png");
   background-size: contain;
 }
