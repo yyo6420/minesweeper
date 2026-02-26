@@ -7,22 +7,25 @@ function Board({ counter, setCounter }) {
   const [isWon, setIswon] = useState(false);
   const [blocks, setBlocks] = useState(new Array(120).fill(""));
   const [bombList, setBombList] = useState([...bombs]);
-  console.log(bombList);
+  const [gameId, setGameId] = useState(0);
 
-  // const playAgain = () => {
-  //   setIswon(false);
-  //   bombs = creatBombs();
-  //   setBlocks(new Array(120).fill(""));
-  //   setBombList([...bombs]);
-  //   setCounter(0);
-  // };
+  const playAgain = () => {
+    setIswon(false);
+    setBlocks(new Array(120).fill(""));
+    setCounter(0);
+    setBombList([...creatBombs()]);
+    setGameId((prev) => prev + 1);
+  };
+
   return (
     <>
       {isWon && (
         <div className="winBlock">
           <div className="winDiv">
             <h1 className="winTitleText">כל הכבוד!!🏆</h1>
-            <button className="winButton">שחק שוב</button>
+            <button onClick={playAgain} className="winButton">
+              שחק שוב
+            </button>
           </div>
         </div>
       )}
@@ -31,7 +34,7 @@ function Board({ counter, setCounter }) {
           <Block
             isWon={isWon}
             setIswon={setIswon}
-            key={index}
+            key={`${gameId}-${index}`}
             bombList={bombList}
             index={index}
             setCounter={setCounter}
