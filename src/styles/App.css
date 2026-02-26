@@ -10,6 +10,20 @@
   gap: 1rem;
 }
 
+.titleAndTimerDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 11.5rem;
+}
+
+.timer {
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e30613;
+  text-shadow: 2px 2px #ffffff;
+}
+
 .pageTitle {
   font-size: 3.5rem;
   color: #ffffff;
